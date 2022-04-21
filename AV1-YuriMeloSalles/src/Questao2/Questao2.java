@@ -81,6 +81,14 @@ public class Questao2 extends JFrame {
 				int classe = Integer.parseInt(txtClasses.getText());
 				int tags = Integer.parseInt(txtTags.getText());
 				
+				int idsNew = ids * 100;
+				int classeNew = classe * 10;
+				int tagsNew = tags * 1;
+				
+				int btnCalc = idsNew + classeNew + tagsNew;
+				
+				JOptionPane.showMessageDialog(null, "A quantidade total de pontos é de: "+btnCalc);
+				
 			}
 		});
 		btnCalcular.setBackground(new Color(0, 0, 255));
